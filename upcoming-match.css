@@ -83,6 +83,7 @@ main{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
+    
 }
 
 .full-container{
@@ -198,37 +199,6 @@ text-decoration: none;
    
 }
 
-#btn-5{
-    border: 2px solid black;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    color: #161616;
-    padding: 5px 18px;
-    margin-left: 20px;
-    
-}
-
-#btn-6{
-    text-decoration: none;
-    margin: 20px;
-    color: #161616;
-
-}
-.fa-clock{
-    padding-right: 10px;
-}
-
-#btn-7{
-    text-decoration: none;
-    margin: 20px;
-    color: #161616;
-}
-
-.fa-comment-dots{
-    padding-right: 10px;
-}
-
 /*--------------- Main-Part-End------------- */
 
 
@@ -294,7 +264,7 @@ hr{
 
 /*----------- Responsive-Layout-For-Mobile-View-------------- */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 688px) {
 
     /* -------Header-part-Start------- */
     
@@ -346,10 +316,11 @@ hr{
     }
     
     .full-container{
-      display: flex;
-      flex-direction: column;
-    
-    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
     }
     .menu-full{
         width: 25%;
@@ -358,6 +329,7 @@ hr{
     
     .menu-part{
         background: transparent;
+        margin-left: -100px;
     }
     
     #btn-3{
@@ -374,7 +346,7 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
         margin-bottom: 30px;
-        
+        margin-left: 18px;
     }
     /* --------------Main-Part-End--------------- */
     
@@ -424,3 +396,62 @@ hr{
 
 /*----------- Responsive-Layout-For-Mobile-View-End------------ */
 
+/*------------- Responsive-Layout-For-Tablet/Ipad-View----------------------- */
+
+@media only screen and (min-width: 689px) and (max-width: 992px){
+
+    
+    header{
+        width: 80%;
+        height: auto;
+        display: flex;
+    }
+
+    .article-part h1{
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .article-part p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .img-part img{
+        width: 95%;
+    }
+
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .full-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+      
+      }
+
+      .menu-full{
+        margin: 25px 150px;
+      }
+
+      .menu-part{
+        background: transparent;
+       
+      }
+
+    
+
+    .blog-part{
+        display: grid;
+        width: 75%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Tblet-view-end */
