@@ -12,67 +12,65 @@
 
 
  /*---------------- Header-Part-Start-------------- */
-
-
- .header-container{
-    width: 1321px;
+ header{
+    width: 80%;
     height: 646px;
-   background: black;
-   margin: 0 auto;
-   margin-top: 50px;
-   position: relative;
-   border-radius: 15px;
-   display: flex;
-   align-items: center;
-   margin-bottom: 80px;
- }
+    background-color: #161616;
+    margin: 30px auto;
+    border-radius: 30px;
+    display: flex;
+    
+}
 
- .article-part{
+.article-part{
     width: 50%;
-    color: white;
-    margin-left: 100px;
- }
- .article-part h1{
-    font-size: 70px;
-    line-height: 85px;
-    margin-bottom: 10px;
- }
+    color: whitesmoke;
+    padding: 165px 85px;
+}
 
- .article-part p{
+.article-part h1{
+    font-size: 55px;
+    line-height: 75px;
+}
+
+.article-part p{
     font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 40px;
- }
+    line-height: 30px;
+}
 
-
- .btn-1{
+.btn-1{
     text-decoration: none;
     background-color: #DD0000;
+    padding: 10px 20px;
+    line-height: 75px;
     color: white;
-    padding: 15px 15px;
     cursor: pointer;
     border-radius: 7px;
     transition:  0.8s;
- }
- .fa-circle-right{
-    padding: 4px 4px;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: black;
+} 
+
+
+.fa-circle-right{
+    padding: 0 4px;
     text-align: center;
  }
 
- .btn-1:hover{
-   background-color: whitesmoke;
-   color: black;
-   
- }
- 
+
 .img-part{
     width: 50%;
-    margin-bottom: -138px;
 }
 
 .img-part img{
-   width: 80%;
-   
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 78px;
 }
 
 /*-------------- Header-Part-End----------------- */
@@ -82,7 +80,7 @@
 
 
 main{
-    width: 1321px;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -240,7 +238,7 @@ text-decoration: none;
 .footer-container{
     background-color: #161616;
     width: 100%;
-height: 444px;
+    height: 460px;
 }
 
 .ftr-text{
@@ -256,18 +254,173 @@ hr{
     margin: 0 auto;
 }
 
-nav{
-    margin-top: 65px;
-    margin-left: 430px;
+.nav-1{
+    text-align: center;
+    margin: 25px;
+    padding: 10px 0;
+    
 }
 
 
-nav a{
+.nav-1 a{
     text-decoration: none;
-    color: #B9B9B9;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 20px;
-    
+    color: whitesmoke;
+    text-align: center;
+    padding-left: 60px;
+}
+
+.nav-2{
+    text-align: center;
+    margin-top: 30px;
     
 }
+
+.nav-2 a{
+    color: whitesmoke;
+    padding: 0 20px;
+    transition: .8s;
+}
+
+.nav-2 a:hover{
+   
+    color: #DD0000;
+    cursor: pointer;
+    font-size: larger;
+}
+
+
+
+/*--------------- Footer-Part-End------------ */
+
+/*----------- Responsive-Layout-For-Mobile-View-------------- */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* -------Header-part-Start------- */
+    
+        header{
+            display: block;
+            text-align: center;
+            height: auto;
+            
+        }    
+    
+        .article-part{
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .article-part h1{
+            font-size: 14px;
+            line-height: 26px;
+            padding: 13px;
+        }
+        .article-part p{
+            font-size: 10px;
+            line-height: 14px;
+            margin-bottom: 10px;
+        }
+    
+        .btn-1{
+            padding: 15px 10px;
+            margin: 0 -60px;
+            
+        }
+    
+    
+        .img-part{
+            margin: 0 auto;
+            width: 62%;
+            
+        }
+        .img-part img{
+            width: 115%;
+            margin-top: 20px;
+            
+        }
+    /* ------Header-part-End-------- */
+
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .full-container{
+      display: flex;
+      flex-direction: column;
+    
+    
+    }
+    .menu-full{
+        width: 25%;
+        
+    }
+    
+    .menu-part{
+        background: transparent;
+    }
+    
+    #btn-3{
+        border: 1px solid #E8E8E8;
+    }
+    #btn-4{
+        border: 1px solid #E8E8E8;
+    }
+
+
+    .blog-part{
+        display: grid;
+        width: 75%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        margin-bottom: 30px;
+        
+    }
+    /* --------------Main-Part-End--------------- */
+    
+    /*---------- Footer-Part-Start------------ */
+
+.footer-container{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.ftr-text{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 32px;
+}
+
+
+
+.nav-1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -39px;
+    gap: 30px;
+}
+
+.nav-1 a{
+    text-align: center;
+}
+
+.nav-2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -7px;
+    gap: 30px;
+}
+
+}
+/*----------- Footer-Part-End------------- */
+
+/*----------- Responsive-Layout-For-Mobile-View-End------------ */
+
